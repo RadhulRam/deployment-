@@ -891,8 +891,8 @@ footer p {
 .hb-twitter,
 .hb-twitter:before,
 .hb-twitter:after  {
-	background: #55ACEE;
-	border-color: #55ACEE;
+	background: #25D366;
+	border-color: #25D366;
 	color: #ffffff;
 }
 
@@ -900,8 +900,8 @@ footer p {
 .hb-twitter:hover:before,
 .hb-twitter:hover:after   {
 	background: transparent;
-	border-color: #55ACEE;
-	color: #55ACEE;
+	border-color: #25D366;
+	color: #25D366;
 }
 
 /* Twitter inverts */
@@ -909,14 +909,14 @@ footer p {
 .hb-twitter-inv:after,
 .hb-twitter-inv:before {
 	background: transparent;
-	border-color: #55ACEE;
-	color: #55ACEE;
+	border-color: #25D366;
+	color: #25D366;
 }
 .hb-twitter-inv:hover,
 .hb-twitter-inv:hover:after,
 .hb-twitter-inv:hover:before {
-	background: #55ACEE;
-	border-color: #55ACEE;
+	background: #25D366;
+	border-color: #25D366;
 	color: #ffffff;
 }
 
@@ -1764,6 +1764,56 @@ footer p {
 .container{
 	padding-right: 0;
 }
+
+.contact-right a {
+	text-decoration: none;
+	color: #c70d0d;
+}
+
+.pdf a{
+	text-decoration: none;
+	font-size:x-large;
+	color: #c70d0d;
+}
+
+
+
+.pdf a {
+	background-image: linear-gradient(
+	  to right,
+	  #c70d0d,
+	  #c70d0d 50%,
+	  #000 50%
+	);
+	background-size: 200% 100%;
+	background-position: -100%;
+	display: inline-block;
+	padding: 5px 0;
+	position: relative;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	transition: all 0.3s ease-in-out;
+  }
+  
+  .pdf a:before {
+	content: '';
+	background: #c70d0d;
+	display: block;
+	position: absolute;
+	bottom: -3px;
+	left: 0;
+	width: 0;
+	height: 3px;
+	transition: all 0.3s ease-in-out;
+  }
+  
+  .pdf a:hover {
+   background-position: 0;
+  }
+  
+  .pdf a:hover::before {
+	width:100%;
+  }
 
 
 
